@@ -24,25 +24,25 @@ body {
 
 .green {
 	grid-area: verde;
-	background-color: green;
+	background-color: #008000;
 	border-top-left-radius: 100%;
 }
 
 .red {
 	grid-area: vermelho;
-	background-color: red;
+	background-color: #FF0000;
 	border-top-right-radius: 100%;
 }
 
 .yellow {
 	grid-area: amarelo;
-	background-color: yellow;
+	background-color: #FFFF00;
 	border-bottom-left-radius: 100%;
 }
 
 .blue {
 	grid-area: azul;
-	background-color: blue;
+	background-color: #0000FF;
 	border-bottom-right-radius: 100%;
 }
 
