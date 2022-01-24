@@ -1,6 +1,8 @@
 let order = [];
 let clickedOrder = [];
 let score = 0;
+let lostGameAudio = new Audio("./assets/sounds/negative_beeps-6008.mp3");
+let nextLeveAudio = new Audio("./assets/sounds/level-win-6416.mp3");
 
 // POSIÇÕES
 // 0 - green 
@@ -54,6 +56,7 @@ let checkOrder = () => {
 	}
 
 	if(clickedOrder.length == order.length) {
+		nextLeveAudio.play();
 		alert(`Pontuação: ${score}\n Você acertou! Iniciando próximo nível...`)
 		nextLevel();
 	}
@@ -92,6 +95,7 @@ let nextLevel = () => {
 
 
 let gameOver = () => {
+	lostGameAudio.play();
     alert(`Pontuação: ${score}!\nVocê perdeu o jogo!\nClique em OK para iniciar um novo jogo`);
     order = [];
     clickedOrder = [];
